@@ -31,5 +31,5 @@ This portfolio itself — built with React, Node.js, and MongoDB.
 ## 🚀 Getting Started
 Clone the repository:
 ```bash
-git clone https://github.com/<username>/nisha-portfolio.git
+git clone https://github.com/Nishapatel291205/nisha-portfolio.git
 cd nisha-portfolio
