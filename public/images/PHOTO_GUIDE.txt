@@ -1,0 +1,9 @@
+APNI PHOTO KAISE LAGAYEN:
+
+1. Apni photo ko rename karke "profile.jpg" rakho
+2. Is file ko /public/images/ folder mein daalo
+3. Photo circular crop automatically ho jayegi (orb ke andar)
+
+Recommended photo size: 400x400px ya square (1:1 ratio)
+
+Agar photo nahi lagayi to "NP" initials automatically dikhenge.

@@ -1,0 +1,85 @@
+/* =========================================
+   PAGES.CSS — Sub-page shared styles
+   ========================================= */
+
+.page-main {
+  padding-top: 110px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+.page-header {
+  margin-bottom: 3.5rem;
+}
+.page-title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: 0.8rem;
+}
+.page-sub {
+  font-size: 17px;
+  color: var(--text2);
+  font-family: var(--mono);
+}
+.nav-links a.active {
+  color: var(--cyan) !important;
+}
+.nav-links a.active::after {
+  width: 100% !important;
+}
+
+/* ── EXPERIENCE PAGE ── */
+.exp-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.col-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.tl-org {
+  font-size: 13px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  margin-bottom: 8px;
+}
+.tl-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.tl-content p {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.8;
+}
+.ach-big-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 1rem;
+}
+.abc-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.abc-icon { font-size: 28px; }
+.abc-title { font-weight: 600; font-size: 16px; margin-bottom: 3px; }
+.abc-sub   { font-size: 12px; color: var(--text3); font-family: var(--mono); }
+
+@media (max-width: 800px) {
+  .exp-two-col { grid-template-columns: 1fr; gap: 2rem; }
+}

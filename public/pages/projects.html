@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Nisha Patel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav" id="navbar">
+    <a href="../index.html" class="nav-logo">NP<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Journey</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Journey</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+
+  <main class="page-main">
+    <div class="container">
+      <div class="page-header reveal">
+        <div class="sec-pre">// projects</div>
+        <h1 class="page-title">Things I've <em class="grad">Built</em></h1>
+        <p class="page-sub">Full stack apps, AI/ML integrations, and data pipelines.</p>
+      </div>
+
+      <!-- P1 AI Featured -->
+      <div class="pcard p-featured reveal">
+        <div class="ptag-row">
+          <span class="pt pt-ai">AI/ML Integrated</span>
+          <span class="pt pt-full">Full Stack</span>
+          <span class="pt pt-feat">⭐ Featured</span>
+        </div>
+        <div class="playout">
+          <div class="pinfo">
+            <div class="pnum">01</div>
+            <h3 class="pname">Gramin Setu</h3>
+            <p class="ptag-line">Rural Healthcare Intelligence System</p>
+            <p class="pdesc">A full-stack healthcare platform empowering ASHA workers in rural India. Integrates pre-trained <strong>ML models (ONNX/TFLite)</strong> to classify patient health risk in real-time — AI/ML put to genuine, life-changing use.</p>
+            <ul class="pfeat">
+              <li><span class="pd pd-ai"></span>ML health risk classification (ONNX/TFLite deployed)</li>
+              <li><span class="pd pd-ai"></span>Python Flask APIs for live ML inference</li>
+              <li><span class="pd"></span>Role-based dashboards: ASHA Worker + Doctor</li>
+              <li><span class="pd"></span>React.js frontend with data visualizations</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Python</span><span>Flask</span><span>ONNX</span><span>TFLite</span><span>REST APIs</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-health">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">Gramin Setu Dashboard</div></div>
+              <div class="pscreen-body">
+                <div class="ps-metrics">
+                  <div class="psm green"><div class="psm-v">1,284</div><div class="psm-l">Patients</div></div>
+                  <div class="psm red"><div class="psm-v">7</div><div class="psm-l">High Risk</div></div>
+                  <div class="psm blue"><div class="psm-v">94%</div><div class="psm-l">ML Accuracy</div></div>
+                </div>
+                <div class="ps-label">Risk Distribution</div>
+                <div class="ps-chart">
+                  <div class="psc-bar low"><div class="psc-fill"></div><span>Low</span></div>
+                  <div class="psc-bar med"><div class="psc-fill"></div><span>Med</span></div>
+                  <div class="psc-bar high"><div class="psc-fill"></div><span>High</span></div>
+                </div>
+                <div class="ps-model">🧠 ONNX Model Active</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P2 -->
+      <div class="pcard reveal" style="--rd:.1s">
+        <div class="ptag-row">
+          <span class="pt pt-full">Full Stack</span>
+          <span class="pt pt-data">Data Pipeline</span>
+          <span class="pt pt-scrape">Web Scraping</span>
+        </div>
+        <div class="playout rev">
+          <div class="pinfo">
+            <div class="pnum">02</div>
+            <h3 class="pname">Discount Finder</h3>
+            <p class="ptag-line">Intelligent Price Comparison Engine</p>
+            <p class="pdesc">Real-time pricing across e-commerce platforms via a <strong>Python data pipeline</strong> surfaced through a clean React.js UI.</p>
+            <ul class="pfeat">
+              <li><span class="pd pd-ai"></span>Multi-platform real-time scraping pipeline</li>
+              <li><span class="pd"></span>Dynamic search with smart filtering</li>
+              <li><span class="pd"></span>Responsive React.js UI</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Python</span><span>Web Scraping</span><span>APIs</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-price">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">Discount Finder</div></div>
+              <div class="pscreen-body">
+                <div class="ps-search">🔍  Search any product...</div>
+                <div class="price-list">
+                  <div class="price-row best"><div class="pr-name">Amazon</div><div class="pr-price">₹1,299</div><div class="pr-badge">Best ✓</div></div>
+                  <div class="price-row"><div class="pr-name">Flipkart</div><div class="pr-price">₹1,449</div></div>
+                  <div class="price-row"><div class="pr-name">Meesho</div><div class="pr-price">₹1,599</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P3 -->
+      <div class="pcard reveal" style="--rd:.2s">
+        <div class="ptag-row">
+          <span class="pt pt-mern">MERN Stack</span>
+          <span class="pt pt-full">Full Stack</span>
+        </div>
+        <div class="playout">
+          <div class="pinfo">
+            <div class="pnum">03</div>
+            <h3 class="pname">MediLocate</h3>
+            <p class="ptag-line">Real-time Medicine Availability Tracker</p>
+            <p class="pdesc">Complete MERN app helping users find pharmacies with specific medicines. <strong>JWT role-based auth</strong>, location filtering, live inventory.</p>
+            <ul class="pfeat">
+              <li><span class="pd"></span>JWT role auth: User + Pharmacy admin</li>
+              <li><span class="pd"></span>Location-based pharmacy search</li>
+              <li><span class="pd"></span>Real-time MongoDB inventory</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-medi">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">MediLocate</div></div>
+              <div class="pscreen-body">
+                <div class="ps-search">💊  Search medicine...</div>
+                <div class="pharm-list">
+                  <div class="ph-row av"><span class="ph-n">Apollo Pharmacy</span><span class="ph-d">0.3 km</span><span class="ph-s in">In Stock</span></div>
+                  <div class="ph-row av"><span class="ph-n">MedPlus</span><span class="ph-d">0.7 km</span><span class="ph-s in">In Stock</span></div>
+                  <div class="ph-row"><span class="ph-n">HealthKart</span><span class="ph-d">1.2 km</span><span class="ph-s out">Out of Stock</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">NP<span>.</span></div>
+        <p>Nisha Harshadbhai Patel</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/nishapatel2912" target="_blank" class="fsoc fsoc-li" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://github.com/Nishapatel291205" target="_blank" class="fsoc fsoc-gh" title="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

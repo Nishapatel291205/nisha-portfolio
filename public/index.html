@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nisha Patel — MERN & AI/ML Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="bg-glow g3"></div>
+
+  <!-- PROGRESS BAR -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- NAV -->
+<nav class="nav" id="navbar">
+  <!-- Logo -->
+  <a href="#" class="nav-logo">
+    <img src="images/image 11.jpeg" alt="Nisha Logo"
+         style="height:40px; width:auto; display:inline-block; vertical-align:middle;">
+  </a>
+
+  <!-- Hamburger (mobile only) -->
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Navigation Links (desktop) -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="pages/projects.html">Projects</a></li>
+    <li><a href="pages/experience.html">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Nav (hidden until hamburger click) -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="pages/projects.html">Projects</a>
+  <a href="pages/experience.html">Journey</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="tag-pulse"></span>
+        Open to internships &amp; collaborations
+      </div>
+      <h1 class="hero-h1">
+        <span class="h1-line" style="--d:0s">Nisha</span>
+        <span class="h1-line h1-accent" style="--d:.12s">Patel</span>
+      </h1>
+      <div class="hero-role">
+        <span>I build </span>
+        <span class="role-text" id="roleText">intelligent web apps</span>
+        <span class="role-cursor">|</span>
+      </div>
+      <p class="hero-p">
+        Full Stack Developer &amp; AI/ML Engineer crafting smart, production-ready applications.
+        From <em>neural network deployment</em> to <em>MERN architecture</em> — I turn data into digital experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-p">Explore Work <span>→</span></a>
+        <a href="resume.pdf" class="btn-o" download>↓ Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n" data-target="9.72" data-dec="2">0</span>
+          <span class="hstat-l">CGPA</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="3" data-suf="+">0</span>
+          <span class="hstat-l">Projects</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="1" data-suf="st">0</span>
+          <span class="hstat-l">Rank</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="orb-wrap">
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-core">
+          <img src="images/profile.jpg" alt="Nisha Patel" class="orb-photo" onerror="this.style.display='none';document.getElementById('orbInitials').style.display='flex'">
+          <span id="orbInitials">NP</span>
+        </div>
+        <div class="tech-pill tp1"><span class="tp-dot td-react"></span>React.js</div>
+        <div class="tech-pill tp2"><span class="tp-dot td-node"></span>Node.js</div>
+        <div class="tech-pill tp3"><span class="tp-dot td-ml"></span>ML / AI</div>
+        <div class="tech-pill tp4"><span class="tp-dot td-py"></span>Python</div>
+        <div class="tech-pill tp5"><span class="tp-dot td-mongo"></span>MongoDB</div>
+        <div class="orb-dot od1"></div>
+        <div class="orb-dot od2"></div>
+        <div class="orb-dot od3"></div>
+      </div>
+      <div class="hero-card hc-top">
+        <span class="hc-ico">🧠</span>
+        <div>
+          <div class="hc-t">AI/ML Engineering</div>
+          <div class="hc-s">ONNX · TFLite · Flask</div>
+        </div>
+      </div>
+      <div class="hero-card hc-bot">
+        <span class="hc-ico">⚡</span>
+        <div>
+          <div class="hc-t">MERN Stack</div>
+          <div class="hc-s">React · Node · MongoDB</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="sc-mouse"><div class="sc-dot"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-pre">// 01. about_me</div>
+      <div class="about-grid">
+        <div class="reveal">
+          <h2 class="sec-h">Where <em class="grad">Data Science</em><br>Meets Web Engineering</h2>
+          <p class="sec-p">3rd-year IT student at <strong>MBIT, CVM University</strong> building at the intersection of intelligent systems and modern web apps. I don't just write code — I build solutions that learn and adapt.</p>
+          <p class="sec-p">From deploying <strong>ONNX/TFLite ML models</strong> in healthcare apps, to architecting MERN backends with JWT auth — I bring end-to-end thinking to every project.</p>
+          <div class="chip-row">
+            <span class="chip c-ai">🤖 ML Engineer</span>
+            <span class="chip c-mern">⚡ MERN Developer</span>
+            <span class="chip c-data">📊 Data Analysis</span>
+            <span class="chip c-ieee">🔬 IEEE WIE Vice Chair</span>
+            <span class="chip">🏆 1st Rank — Sem 2 &amp; 3</span>
+            <span class="chip">🚀 SIH Participant</span>
+          </div>
+        </div>
+        <div class="about-cards reveal" style="--rd:.15s">
+          <div class="acard ac-edu">
+            <div class="acard-hd"><span>🎓</span> Education</div>
+            <div class="acard-t">CVM University — MBIT</div>
+            <div class="acard-s">B.Tech IT · 2023–2027 · Minor: Robotics</div>
+            <div class="acard-badge">CGPA 9.72</div>
+          </div>
+          <div class="acard ac-loc">
+            <div class="acard-hd"><span>📍</span> Location</div>
+            <div class="acard-t">Khambhat, Gujarat</div>
+            <div class="acard-s">Open to remote &amp; hybrid opportunities</div>
+          </div>
+          <div class="acard ac-focus">
+            <div class="acard-hd"><span>🎯</span> Specializations</div>
+            <div class="focus-tags">
+              <span>Full Stack Dev</span>
+              <span>ML Engineering</span>
+              <span>Data Science</span>
+              <span>API Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="sec-pre">// 02. tech_stack</div>
+      <h2 class="sec-h reveal">My <em class="grad">Toolkit</em></h2>
+
+      <!-- Combined mega card -->
+      <div class="toolkit-card reveal">
+        <div class="tk-col tk-col-ai">
+          <div class="tk-col-header">
+            <div class="tk-icon tk-ai-icon">🤖</div>
+            <div>
+              <div class="tk-col-title">AI / ML &amp; Data Science</div>
+              <div class="tk-col-sub">Core specialization</div>
+            </div>
+          </div>
+          <div class="tk-chips">
+            <span class="tkc tkc-ai">Machine Learning</span>
+            <span class="tkc tkc-ai">Neural Networks</span>
+            <span class="tkc tkc-ai">ONNX / TFLite</span>
+            <span class="tkc tkc-ai">Data Analysis</span>
+            <span class="tkc tkc-ai">Python</span>
+            <span class="tkc tkc-ai">Flask</span>
+            <span class="tkc tkc-ai">NumPy</span>
+            <span class="tkc tkc-ai">Pandas</span>
+            <span class="tkc tkc-ai">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="tk-divider"></div>
+
+        <div class="tk-col tk-col-mern">
+          <div class="tk-col-header">
+            <div class="tk-icon tk-mern-icon">⚡</div>
+            <div>
+              <div class="tk-col-title">MERN Stack</div>
+              <div class="tk-col-sub">Full stack development</div>
+            </div>
+          </div>
+          <div class="tk-chips">
+            <span class="tkc tkc-mern">React.js</span>
+            <span class="tkc tkc-mern">Node.js</span>
+            <span class="tkc tkc-mern">Express.js</span>
+            <span class="tkc tkc-mern">MongoDB</span>
+            <span class="tkc tkc-mern">REST APIs</span>
+            <span class="tkc tkc-mern">JWT Auth</span>
+            <span class="tkc tkc-mern">HTML5 / CSS3</span>
+            <span class="tkc tkc-mern">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="tk-divider"></div>
+
+        <div class="tk-col tk-col-lang">
+          <div class="tk-col-header">
+            <div class="tk-icon tk-lang-icon">💻</div>
+            <div>
+              <div class="tk-col-title">Languages &amp; Tools</div>
+              <div class="tk-col-sub">Core &amp; supporting tech</div>
+            </div>
+          </div>
+          <div class="tk-chips">
+            <span class="tkc tkc-lang">Python <span class="lv">Advanced</span></span>
+            <span class="tkc tkc-lang">JavaScript <span class="lv">Advanced</span></span>
+            <span class="tkc tkc-lang">Java <span class="lv">Intermediate</span></span>
+            <span class="tkc tkc-lang">C++ <span class="lv">Intermediate</span></span>
+            <span class="tkc tkc-tool">MySQL</span>
+            <span class="tkc tkc-tool">PHP</span>
+            <span class="tkc tkc-tool">Git</span>
+            <span class="tkc tkc-tool">Web Scraping</span>
+            <span class="tkc tkc-tool">OS / DBMS / Networks</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="sec-pre">// 03. projects</div>
+      <h2 class="sec-h reveal">Things I've <em class="grad">Built</em></h2>
+
+      <!-- P1 AI Featured -->
+      <div class="pcard p-featured reveal">
+        <div class="ptag-row">
+          <span class="pt pt-ai">AI/ML Integrated</span>
+          <span class="pt pt-full">Full Stack</span>
+          <span class="pt pt-feat">⭐ Featured</span>
+        </div>
+        <div class="playout">
+          <div class="pinfo">
+            <div class="pnum">01</div>
+            <h3 class="pname">Gramin Setu</h3>
+            <p class="ptag-line">Rural Healthcare Intelligence System</p>
+            <p class="pdesc">A full-stack healthcare platform empowering ASHA workers in rural India. Integrates pre-trained <strong>ML models (ONNX/TFLite)</strong> to classify patient health risk in real-time — AI/ML put to genuine, life-changing use.</p>
+            <ul class="pfeat">
+              <li><span class="pd pd-ai"></span>ML health risk classification (ONNX/TFLite deployed)</li>
+              <li><span class="pd pd-ai"></span>Python Flask APIs for live ML inference</li>
+              <li><span class="pd"></span>Role-based dashboards: ASHA Worker + Doctor</li>
+              <li><span class="pd"></span>React.js frontend with data visualizations</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Python</span><span>Flask</span><span>ONNX</span><span>TFLite</span><span>REST APIs</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-health">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">Gramin Setu Dashboard</div></div>
+              <div class="pscreen-body">
+                <div class="ps-metrics">
+                  <div class="psm green"><div class="psm-v">1,284</div><div class="psm-l">Patients</div></div>
+                  <div class="psm red"><div class="psm-v">7</div><div class="psm-l">High Risk</div></div>
+                  <div class="psm blue"><div class="psm-v">94%</div><div class="psm-l">ML Accuracy</div></div>
+                </div>
+                <div class="ps-label">Risk Distribution</div>
+                <div class="ps-chart">
+                  <div class="psc-bar low"><div class="psc-fill"></div><span>Low</span></div>
+                  <div class="psc-bar med"><div class="psc-fill"></div><span>Med</span></div>
+                  <div class="psc-bar high"><div class="psc-fill"></div><span>High</span></div>
+                </div>
+                <div class="ps-model">🧠 ONNX Model Active</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P2 -->
+      <div class="pcard reveal" style="--rd:.1s">
+        <div class="ptag-row">
+          <span class="pt pt-full">Full Stack</span>
+          <span class="pt pt-data">Data Pipeline</span>
+          <span class="pt pt-scrape">Web Scraping</span>
+        </div>
+        <div class="playout rev">
+          <div class="pinfo">
+            <div class="pnum">02</div>
+            <h3 class="pname">Discount Finder</h3>
+            <p class="ptag-line">Intelligent Price Comparison Engine</p>
+            <p class="pdesc">Scrapes real-time pricing across e-commerce platforms through a <strong>Python data pipeline</strong> and surfaces deals through a React.js UI. Practical data engineering meets full-stack development.</p>
+            <ul class="pfeat">
+              <li><span class="pd pd-ai"></span>Multi-platform real-time data scraping pipeline</li>
+              <li><span class="pd"></span>Dynamic search with smart filtering</li>
+              <li><span class="pd"></span>Responsive React.js UI with live price updates</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Python</span><span>Web Scraping</span><span>APIs</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-price">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">Discount Finder</div></div>
+              <div class="pscreen-body">
+                <div class="ps-search">🔍  Search any product...</div>
+                <div class="price-list">
+                  <div class="price-row best">
+                    <div class="pr-name">Amazon</div>
+                    <div class="pr-price">₹1,299</div>
+                    <div class="pr-badge">Best ✓</div>
+                  </div>
+                  <div class="price-row">
+                    <div class="pr-name">Flipkart</div>
+                    <div class="pr-price">₹1,449</div>
+                  </div>
+                  <div class="price-row">
+                    <div class="pr-name">Meesho</div>
+                    <div class="pr-price">₹1,599</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P3 -->
+      <div class="pcard reveal" style="--rd:.2s">
+        <div class="ptag-row">
+          <span class="pt pt-mern">MERN Stack</span>
+          <span class="pt pt-full">Full Stack</span>
+        </div>
+        <div class="playout">
+          <div class="pinfo">
+            <div class="pnum">03</div>
+            <h3 class="pname">MediLocate</h3>
+            <p class="ptag-line">Real-time Medicine Availability Tracker</p>
+            <p class="pdesc">Complete MERN stack app helping users locate pharmacies with specific medicines in real-time. Features <strong>JWT role-based authentication</strong>, location filtering, and live inventory management.</p>
+            <ul class="pfeat">
+              <li><span class="pd"></span>JWT-secured role auth: User + Pharmacy admin</li>
+              <li><span class="pd"></span>Location-based pharmacy search &amp; filtering</li>
+              <li><span class="pd"></span>Real-time inventory updates via MongoDB</li>
+            </ul>
+            <div class="pstack"><span>React.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+            <a href="https://github.com/Nishapatel291205" target="_blank" class="pbtn">View on GitHub →</a>
+          </div>
+          <div class="pvisual pv-medi">
+            <div class="pscreen">
+              <div class="pscreen-bar"><span></span><span></span><span></span><div class="pscreen-title">MediLocate</div></div>
+              <div class="pscreen-body">
+                <div class="ps-search">💊  Search medicine...</div>
+                <div class="pharm-list">
+                  <div class="ph-row av">
+                    <span class="ph-n">Apollo Pharmacy</span>
+                    <span class="ph-d">0.3 km</span>
+                    <span class="ph-s in">In Stock</span>
+                  </div>
+                  <div class="ph-row av">
+                    <span class="ph-n">MedPlus</span>
+                    <span class="ph-d">0.7 km</span>
+                    <span class="ph-s in">In Stock</span>
+                  </div>
+                  <div class="ph-row">
+                    <span class="ph-n">HealthKart</span>
+                    <span class="ph-d">1.2 km</span>
+                    <span class="ph-s out">Out of Stock</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="sec-pre">// 04. journey</div>
+      <h2 class="sec-h reveal">Experience &amp; <em class="grad">Achievements</em></h2>
+      <div class="timeline">
+
+        <div class="tl reveal">
+          <div class="tl-marker m-blue"></div>
+          <div class="tl-content">
+            <span class="tl-date">May 2024 – Jun 2024</span>
+            <h3>C++ Programming Intern — CodeSoft</h3>
+            <p>Project-based internship strengthening OOP, data structures, and real-world C++ problem-solving skills.</p>
+          </div>
+        </div>
+
+        <div class="tl reveal" style="--rd:.1s">
+          <div class="tl-marker m-gold"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 – Present</span>
+            <h3>Vice Chairperson — IEEE WIE, MBIT Chapter</h3>
+            <p>Leading workshops, seminars, and tech events. Driving initiatives to empower women in engineering and emerging technology at CVM University.</p>
+          </div>
+        </div>
+
+        <div class="tl reveal" style="--rd:.2s">
+          <div class="tl-marker m-cyan"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 – Present</span>
+            <h3>Coordinator — Astronomy Club &amp; Alumni Cell</h3>
+            <p>Organizing science awareness events, stargazing sessions, and maintaining strong alumni-student connections.</p>
+          </div>
+        </div>
+
+        <div class="tl reveal" style="--rd:.3s">
+          <div class="tl-marker m-gold"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 – 2024</span>
+            <h3>Academic Excellence — 1st Rank, CGPA 9.72</h3>
+            <p>Consistently topped the class. Represented institute at SIH and CVM University Hackathon.</p>
+            <div class="ach-grid">
+              <div class="ach"><span>🏆</span> 1st Rank Sem 2 &amp; 3</div>
+              <div class="ach"><span>🚀</span> Smart India Hackathon</div>
+              <div class="ach"><span>💡</span> CVM Hackathon</div>
+              <div class="ach"><span>🎓</span> E2E Dev Certificate</div>
+              <div class="ach"><span>🌟</span> Gyanotsav 2K25</div>
+              <div class="ach"><span>🏏</span> Cricket Runner-Up</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="sec-pre">// 05. certifications</div>
+      <h2 class="sec-h reveal">Certifications &amp; <em class="grad">Recognition</em></h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal" style="--rd:0s">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <div class="cert-title">E2E Software Development Track</div>
+            <div class="cert-org">Global Certificate</div>
+            <div class="cert-tags"><span>Full Stack</span><span>MERN</span></div>
+          </div>
+          <div class="cert-badge verified">Verified</div>
+        </div>
+        <div class="cert-card reveal" style="--rd:.08s">
+          <div class="cert-icon">🚀</div>
+          <div class="cert-body">
+            <div class="cert-title">Smart India Hackathon</div>
+            <div class="cert-org">Government of India · SIH 2024</div>
+            <div class="cert-tags"><span>AI/ML</span><span>Problem Solving</span></div>
+          </div>
+          <div class="cert-badge hackathon">Participant</div>
+        </div>
+        <div class="cert-card reveal" style="--rd:.16s">
+          <div class="cert-icon">💻</div>
+          <div class="cert-body">
+            <div class="cert-title">C++ Programming Internship</div>
+            <div class="cert-org">CodeSoft · May–Jun 2024</div>
+            <div class="cert-tags"><span>C++</span><span>OOP</span></div>
+          </div>
+          <div class="cert-badge intern">Completed</div>
+        </div>
+        <div class="cert-card reveal" style="--rd:.24s">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <div class="cert-title">Web Development Workshop</div>
+            <div class="cert-org">MBIT · CVM University</div>
+            <div class="cert-tags"><span>Frontend</span><span>HTML/CSS/JS</span></div>
+          </div>
+          <div class="cert-badge workshop">Hands-on</div>
+        </div>
+        <div class="cert-card reveal" style="--rd:.32s">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-body">
+            <div class="cert-title">Academic Excellence Award</div>
+            <div class="cert-org">CVM University · Sem 2 &amp; 3</div>
+            <div class="cert-tags"><span>1st Rank</span><span>CGPA 9.72</span></div>
+          </div>
+          <div class="cert-badge gold">1st Rank</div>
+        </div>
+        <div class="cert-card reveal" style="--rd:.4s">
+          <div class="cert-icon">🌟</div>
+          <div class="cert-body">
+            <div class="cert-title">Gyanotsav 2K25</div>
+            <div class="cert-org">CVM University Fest</div>
+            <div class="cert-tags"><span>Technical</span><span>Innovation</span></div>
+          </div>
+          <div class="cert-badge event">Participant</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="sec-pre">// 06. contact</div>
+      <h2 class="sec-h reveal">Let's <em class="grad">Connect</em></h2>
+      <p class="contact-sub reveal">Open to internships, research collabs, and AI/ML + MERN projects. Drop a message — I reply within 24 hours!</p>
+
+      <div class="contact-grid">
+
+        <!-- LEFT: Social Links -->
+        <div class="contact-left reveal">
+
+          <p class="connect-heading">Find me on</p>
+
+          <!-- Email -->
+          <a href="mailto:nishapatel291205@gmail.com" class="clink clink-email" target="_blank" rel="noopener">
+            <div class="clink-ico-wrap ci-email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="20" height="16" x="2" y="4" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="m2 7 10 7 10-7" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="clink-info">
+              <div class="clink-l">Email</div>
+              <div class="clink-v">nishapatel291205@gmail.com</div>
+            </div>
+            <span class="clink-arrow">↗</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/nishapatel2912" class="clink clink-linkedin" target="_blank" rel="noopener">
+            <div class="clink-ico-wrap ci-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="clink-info">
+              <div class="clink-l">LinkedIn</div>
+              <div class="clink-v">linkedin.com/in/nishapatel2912</div>
+            </div>
+            <span class="clink-arrow">↗</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/Nishapatel291205" class="clink clink-github" target="_blank" rel="noopener">
+            <div class="clink-ico-wrap ci-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="clink-info">
+              <div class="clink-l">GitHub</div>
+              <div class="clink-v">github.com/Nishapatel291205</div>
+            </div>
+            <span class="clink-arrow">↗</span>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+919638997152" class="clink clink-phone">
+            <div class="clink-ico-wrap ci-phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="clink-info">
+              <div class="clink-l">Phone</div>
+              <div class="clink-v">+91 9638997152</div>
+            </div>
+          </a>
+
+          <!-- Availability Banner -->
+          <div class="availability-card">
+            <div class="av-dot"></div>
+            <div>
+              <div class="av-title">Available for Opportunities</div>
+              <div class="av-sub">Internships · Projects · Collaborations</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <form class="cform reveal" id="contactForm" style="--rd:.15s">
+          <div class="form-header">
+            <div class="form-title">Send a Message</div>
+            <div class="form-sub">I'll reply to your email within 24 hours ✦</div>
+          </div>
+          <div class="form-row">
+            <div class="fg">
+              <label>Your Name *</label>
+              <input type="text" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="fg">
+              <label>Your Email *</label>
+              <input type="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Internship opportunity / Project collab / Just saying hi!">
+          </div>
+          <div class="fg">
+            <label>Message *</label>
+            <textarea name="message" rows="5" placeholder="Tell me about your project, opportunity, or idea..." required></textarea>
+          </div>
+          <button type="submit" class="csubmit" id="submitBtn">
+            <span id="btnText">Send Message →</span>
+            <span id="btnLoad" style="display:none">⏳ Sending...</span>
+          </button>
+          <div class="form-ok" id="formOk">✅ Message sent! Check your email — I'll reply soon.</div>
+          <div class="form-err" id="formErr">❌ Something went wrong. Please email me directly.</div>
+          <div class="form-note">🔒 Your info is never shared with anyone.</div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">NP<span>.</span></div>
+        <p>Designed &amp; Built by <strong>Nisha Harshadbhai Patel</strong></p>
+        <p class="fcopy">© 2025 · Khambhat, Gujarat · Open to Opportunities</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/nishapatel2912" target="_blank" rel="noopener" class="fsoc fsoc-li" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Nishapatel291205" target="_blank" rel="noopener" class="fsoc fsoc-gh" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="mailto:nishapatel291205@gmail.com" class="fsoc fsoc-mail" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect width="20" height="16" x="2" y="4" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="m2 7 10 7 10-7" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+        <div class="fstack"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Python</span><span>ML/AI</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
